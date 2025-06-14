@@ -13,7 +13,7 @@ Bu proje, **Oxford 3000** kelime listesini kullanarak İngilizce kelime öğreni
 - **Modern ve Kullanıcı Dostu Arayüz:** Tkinter kullanılarak tasarlanmış, sade ve estetik bir arayüz.
 - **Akıllı Tekrar Algoritması:** Bir kelimeyi doğru bildiğinizde tekrar süresini uzatan, bilemediğinizde ise size daha sık sorarak öğrenmeyi pekiştiren akıllı bir sistem.
 - **Zengin Veritabanı:** Her kelime için Türkçe anlamı, CEFR seviyesi (A1-B2), kelime türü (isim, fiil vb.) ve kelimenin kullanımını gösteren bir örnek cümle içerir.
-- **İlerleme Kaydı:** Tüm öğrenme ilerlemeniz `review_schedule.json` dosyasına kaydedilir, böylece uygulamayı kapatıp açtığınızda kaldığınız yerden devam edebilirsiniz.
+- **İlerleme Kaydı:** Tüm öğrenme ilerlemeniz `category_data.json` dosyasına kaydedilir, böylece uygulamayı kapatıp açtığınızda kaldığınız yerden devam edebilirsiniz.
 - **Kolay Kurulum:** Harici olarak sadece `pandas` ve `openpyxl` kütüphanelerini gerektirir.
 
 ---
@@ -31,7 +31,7 @@ Bu proje, **Oxford 3000** kelime listesini kullanarak İngilizce kelime öğreni
 
 - **Python 3.x**
 - **Tkinter:** Görsel masaüstü arayüzü için kullanılmıştır.
-- **Pandas & Openpyxl:** `Oxford3000_veritabani.xlsx` Excel dosyasını verimli bir şekilde okumak ve yönetmek için kullanılmıştır.
+- **Pandas & Openpyxl:** `The_Oxford_3000.xlsx` Excel dosyasını verimli bir şekilde okumak ve yönetmek için kullanılmıştır.
 - **JSON:** Öğrenme takvimini ve ilerlemeyi kaydetmek için kullanılmıştır.
 
 ---
@@ -62,7 +62,7 @@ Bu proje, **Oxford 3000** kelime listesini kullanarak İngilizce kelime öğreni
     pip install -r requirements.txt
     ```
 4.  **Veritabanı Dosyasını Kontrol Edin:**
-    `Oxford3000_veritabani.xlsx` dosyasının ana proje klasöründe olduğundan emin olun.
+    `The_Oxford_3000.xlsx` dosyasının ana proje klasöründe olduğundan emin olun.
 
 ### Çalıştırma
 
@@ -76,7 +76,7 @@ python main.py
 ## 🗂️ Dosya Yapısı
 
 - **`main.py`**: Uygulamanın ana mantığını, arayüzünü ve aralıklı tekrar algoritmasını içerir.
-- **`Oxford3000_veritabani.xlsx`**: Kelimeleri, anlamlarını, seviyelerini, türlerini ve örnek cümleleri barındıran ana veri kaynağıdır.
-- **`review_schedule.json`**: Her kelimenin öğrenme seviyesini ve bir sonraki tekrar tarihini tutar. Kullanıcının ilerlemesi bu dosyada saklanır.
+- **`The_Oxford_3000.xlsx`**: Kelimeleri, anlamlarını, seviyelerini, türlerini ve örnek cümleleri barındıran ana veri kaynağıdır.
+- **`category_data.json`**: Her kelimenin öğrenme seviyesini ve bir sonraki tekrar tarihini tutar. Kullanıcının ilerlemesi bu dosyada saklanır.
 - **`requirements.txt`**: Projenin çalışması için gerekli Python kütüphanelerini listeler.
 - **`images/`**: Arayüz ekran görüntülerini içeren klasördür.
